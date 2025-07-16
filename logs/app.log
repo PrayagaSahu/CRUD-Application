@@ -1,0 +1,160 @@
+{"level":"INFO","timestamp":"2025-07-15T16:45:24.205+0530","caller":"handler/user_handler.go:37","msg":"CreateUser handler invoked","request_id":"e876b064-4bfb-4c98-a7f6-ed6d4740deb4"}
+{"level":"WARN","timestamp":"2025-07-15T16:45:24.208+0530","caller":"handler/user_handler.go:55","msg":"Email already in use","request_id":"e876b064-4bfb-4c98-a7f6-ed6d4740deb4","email":"prayaga@example.com"}
+2025-07-15T16:48:08.979+0530	INFO	handler/user_handler.go:37	CreateUser handler invoked	{"request_id": "d14aa1e7-6312-4d0d-81e9-9f85ccb5eb8f"}
+2025-07-15T16:48:08.983+0530	WARN	handler/user_handler.go:55	Email already in use	{"request_id": "d14aa1e7-6312-4d0d-81e9-9f85ccb5eb8f", "email": "prayaga@example.com"}
+2025-07-15T17:15:37.104+0530	INFO	handler/user_handler.go:37	CreateUser handler invoked	{"request_id": "585d886a-ef52-4c7e-b3cd-2bc37a54ea5a"}
+2025-07-15T17:15:37.108+0530	WARN	handler/user_handler.go:55	Email already in use	{"request_id": "585d886a-ef52-4c7e-b3cd-2bc37a54ea5a", "email": "prayaga@example.com"}
+2025-07-15T17:15:43.563+0530	INFO	handler/user_handler.go:37	CreateUser handler invoked	{"request_id": "9db58496-3989-4674-abc6-4f59a820ce3f"}
+2025-07-15T17:15:43.573+0530	INFO	handler/user_handler.go:66	User created successfully	{"request_id": "9db58496-3989-4674-abc6-4f59a820ce3f", "user_id": 8}
+2025-07-15T17:21:18.919+0530	INFO	handler/user_handler.go:37	CreateUser handler invoked	{"request_id": "d1b539e5-1440-442b-b0c8-9a54875926a8"}
+2025-07-15T17:21:18.923+0530	WARN	handler/user_handler.go:55	Email already in use	{"request_id": "d1b539e5-1440-442b-b0c8-9a54875926a8", "email": "prayag@example.com"}
+2025-07-15T17:21:33.093+0530	INFO	handler/user_handler.go:37	CreateUser handler invoked	{"request_id": "ac65afbc-3b33-421b-b60d-a35e68dff6e9"}
+2025-07-15T17:21:33.150+0530	ERROR	handler/user_handler.go:61	Failed to create user	{"request_id": "ac65afbc-3b33-421b-b60d-a35e68dff6e9", "error": "pq: column \"phone\" of relation \"users\" does not exist"}
+go-crud-oapi/internal/handler.(*UserHandler).CreateUser
+	D:/Go/go-crud-oapi/internal/handler/user_handler.go:61
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5.(*Mux).routeHTTP
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/mux.go:478
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/mux.go:73
+github.com/go-chi/chi/v5.(*Mux).Mount.func1
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/mux.go:325
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5.(*Mux).routeHTTP
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/mux.go:478
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+go-crud-oapi/internal/middleware.RequestID.func1
+	D:/Go/go-crud-oapi/internal/middleware/logger.go:14
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5/middleware.Recoverer.func1
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/middleware/recoverer.go:45
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/mux.go:90
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-07-15T17:22:23.449+0530	INFO	handler/user_handler.go:37	CreateUser handler invoked	{"request_id": "b9a7ae75-cc71-4a12-9b09-1dcfb0e12568"}
+2025-07-15T17:22:23.451+0530	WARN	handler/user_handler.go:41	Invalid request payload	{"request_id": "b9a7ae75-cc71-4a12-9b09-1dcfb0e12568", "error": "invalid character '\"' after object key:value pair"}
+2025-07-15T17:22:28.262+0530	INFO	handler/user_handler.go:37	CreateUser handler invoked	{"request_id": "7e5db737-7c59-46e5-babd-f0bc6443b739"}
+2025-07-15T17:22:28.266+0530	ERROR	handler/user_handler.go:61	Failed to create user	{"request_id": "7e5db737-7c59-46e5-babd-f0bc6443b739", "error": "pq: column \"phone\" of relation \"users\" does not exist"}
+go-crud-oapi/internal/handler.(*UserHandler).CreateUser
+	D:/Go/go-crud-oapi/internal/handler/user_handler.go:61
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5.(*Mux).routeHTTP
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/mux.go:478
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/mux.go:73
+github.com/go-chi/chi/v5.(*Mux).Mount.func1
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/mux.go:325
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5.(*Mux).routeHTTP
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/mux.go:478
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+go-crud-oapi/internal/middleware.RequestID.func1
+	D:/Go/go-crud-oapi/internal/middleware/logger.go:14
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5/middleware.Recoverer.func1
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/middleware/recoverer.go:45
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/mux.go:90
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-07-15T17:31:51.654+0530	INFO	handler/user_handler.go:37	CreateUser handler invoked	{"request_id": "40f04184-ec4e-4c46-9f51-5b5ad9d6a907"}
+2025-07-15T17:31:51.662+0530	INFO	handler/user_handler.go:66	User created successfully	{"request_id": "40f04184-ec4e-4c46-9f51-5b5ad9d6a907", "user_id": 9}
+2025-07-15T17:31:58.471+0530	INFO	handler/user_handler.go:37	CreateUser handler invoked	{"request_id": "0c6ddc44-eecc-4994-8bbc-0cbf52e445c2"}
+2025-07-15T17:31:58.475+0530	WARN	handler/user_handler.go:55	Email already in use	{"request_id": "0c6ddc44-eecc-4994-8bbc-0cbf52e445c2", "email": "prayagr@example.com"}
+2025-07-15T17:33:08.552+0530	INFO	handler/user_handler.go:37	CreateUser handler invoked	{"request_id": "254dac94-f132-4f6f-9b92-aebec995f0a2"}
+2025-07-15T17:33:08.559+0530	INFO	handler/user_handler.go:66	User created successfully	{"request_id": "254dac94-f132-4f6f-9b92-aebec995f0a2", "user_id": 10}
+2025-07-15T17:33:14.532+0530	INFO	handler/user_handler.go:37	CreateUser handler invoked	{"request_id": "cf4c8999-c1c7-4556-b5f5-3cfcc48ab6f0"}
+2025-07-15T17:33:14.536+0530	WARN	handler/user_handler.go:55	Email already in use	{"request_id": "cf4c8999-c1c7-4556-b5f5-3cfcc48ab6f0", "email": "uu"}
+2025-07-15T17:33:23.313+0530	INFO	handler/user_handler.go:37	CreateUser handler invoked	{"request_id": "8d51ea11-5abf-4693-9c27-a5aa68c07a69"}
+2025-07-15T17:33:23.317+0530	INFO	handler/user_handler.go:66	User created successfully	{"request_id": "8d51ea11-5abf-4693-9c27-a5aa68c07a69", "user_id": 11}
+2025-07-15T17:44:48.498+0530	INFO	controller/user_controller.go:37	CreateUser handler invoked	{"request_id": "21383e03-8cce-4d7f-9911-e2d2221738f4"}
+2025-07-15T17:44:48.500+0530	WARN	controller/user_controller.go:55	Email already in use	{"request_id": "21383e03-8cce-4d7f-9911-e2d2221738f4", "email": "uuu"}
+2025-07-15T17:45:00.414+0530	INFO	controller/user_controller.go:37	CreateUser handler invoked	{"request_id": "8f2d7e80-50da-4d2a-b180-0ee008efef2d"}
+2025-07-15T17:45:00.423+0530	INFO	controller/user_controller.go:66	User created successfully	{"request_id": "8f2d7e80-50da-4d2a-b180-0ee008efef2d", "user_id": 12}
+2025-07-15T17:59:06.485+0530	INFO	controller/user_controller.go:37	CreateUser handler invoked	{"request_id": "b4ccb599-caed-4b33-b392-0f3c0c0eefd8"}
+2025-07-15T17:59:06.490+0530	WARN	controller/user_controller.go:55	Email already in use	{"request_id": "b4ccb599-caed-4b33-b392-0f3c0c0eefd8", "email": "yuryfuuu"}
+2025-07-15T17:59:14.478+0530	INFO	controller/user_controller.go:37	CreateUser handler invoked	{"request_id": "b2f4de31-361d-4249-b582-ec29eace7d03"}
+2025-07-15T17:59:14.489+0530	INFO	controller/user_controller.go:66	User created successfully	{"request_id": "b2f4de31-361d-4249-b582-ec29eace7d03", "user_id": 13}
+2025-07-16T11:46:53.605+0530	INFO	controller/user_controller.go:43	CreateUser handler invoked
+2025-07-16T11:46:53.629+0530	INFO	controller/user_controller.go:72	User created successfully	{"user_id": 1}
+2025-07-16T11:47:45.636+0530	INFO	controller/user_controller.go:80	GetUser handler invoked	{"user_id_param": "1"}
+2025-07-16T11:47:45.638+0530	INFO	controller/user_controller.go:97	User retrieved	{"user_id": 1}
+2025-07-16T11:48:02.791+0530	INFO	controller/user_controller.go:28	ListUsers handler invoked
+2025-07-16T11:48:02.793+0530	INFO	controller/user_controller.go:37	Successfully retrieved users	{"count": 1}
+2025-07-16T11:48:18.212+0530	INFO	controller/user_controller.go:104	UpdateUser handler invoked	{"user_id_param": "1"}
+2025-07-16T11:48:18.218+0530	INFO	controller/user_controller.go:138	User updated successfully	{"user_id": 1}
+2025-07-16T11:48:26.092+0530	INFO	controller/user_controller.go:104	UpdateUser handler invoked	{"user_id_param": "1"}
+2025-07-16T11:48:26.095+0530	WARN	controller/user_controller.go:127	Email already in use	{"email": "sahu.prayaga@example.com"}
+2025-07-16T11:48:41.099+0530	INFO	controller/user_controller.go:145	DeleteUser handler invoked	{"user_id_param": "1"}
+2025-07-16T11:48:41.102+0530	INFO	controller/user_controller.go:160	User deleted successfully	{"user_id": 1}
+2025-07-16T11:48:52.620+0530	INFO	controller/user_controller.go:43	CreateUser handler invoked
+2025-07-16T11:48:52.624+0530	INFO	controller/user_controller.go:72	User created successfully	{"user_id": 2}
+2025-07-16T12:36:29.828+0530	INFO	controller/external_api_controller.go:22	HandleExternalAPICall invoked
+2025-07-16T12:36:30.472+0530	ERROR	controller/external_api_controller.go:45	Authentication failed
+go-crud-oapi/internal/controller.(*ExternalController).HandleExternalAPICall
+	D:/Go/go-crud-oapi/internal/controller/external_api_controller.go:45
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5.(*Mux).routeHTTP
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/mux.go:478
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+go-crud-oapi/internal/middleware.RequestID.func1
+	D:/Go/go-crud-oapi/internal/middleware/correlation.go:18
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5/middleware.Recoverer.func1
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/middleware/recoverer.go:45
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/mux.go:90
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-07-16T12:38:42.031+0530	INFO	controller/external_api_controller.go:22	HandleExternalAPICall invoked
+2025-07-16T12:38:42.461+0530	ERROR	controller/external_api_controller.go:45	Authentication failed
+go-crud-oapi/internal/controller.(*ExternalController).HandleExternalAPICall
+	D:/Go/go-crud-oapi/internal/controller/external_api_controller.go:45
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5.(*Mux).routeHTTP
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/mux.go:478
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+go-crud-oapi/internal/middleware.RequestID.func1
+	D:/Go/go-crud-oapi/internal/middleware/correlation.go:18
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5/middleware.Recoverer.func1
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/middleware/recoverer.go:45
+net/http.HandlerFunc.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:2294
+github.com/go-chi/chi/v5.(*Mux).ServeHTTP
+	C:/Users/prayaga.sahu/go/pkg/mod/github.com/go-chi/chi/v5@v5.2.2/mux.go:90
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
