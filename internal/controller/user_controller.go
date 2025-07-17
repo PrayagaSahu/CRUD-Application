@@ -153,7 +153,7 @@ func (c *UserController) DeleteUser(w http.ResponseWriter, r *http.Request) {
 
 	if err := c.svc.Delete(r.Context(), uint(id)); err != nil {
 		log.Error("Failed to delete user", zap.Int("user_id", id), zap.Error(err))
-		utils.WriteJSONError(w, http.StatusInternalServerError)
+		utils.WriteJSONError(w, http.StatusNoContent)
 		return
 	}
 

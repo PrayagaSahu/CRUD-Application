@@ -4,6 +4,8 @@ import (
 	"context"
 	"go-crud-oapi/internal/model"
 	"go-crud-oapi/internal/repository"
+
+	"gorm.io/gorm"
 )
 
 type UserServiceInterFace interface {
@@ -45,5 +47,13 @@ func (s *UserService) Update(ctx context.Context, id uint, user *model.User) err
 }
 
 func (s *UserService) Delete(ctx context.Context, id uint) error {
+	user, err := s.repo.GetUserById(ctx, id)
+	if err != nil {
+		return err
+	}
+	if user == nil {
+		return gorm.ErrRecordNotFound
+	}
+
 	return s.repo.DeleteUser(ctx, id)
 }

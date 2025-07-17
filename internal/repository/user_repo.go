@@ -32,7 +32,13 @@ func (r *UserRepo) UpdateUser(ctx context.Context, id uint, user *model.User) er
 }
 
 func (r *UserRepo) DeleteUser(ctx context.Context, id uint) error {
-	return r.DB.WithContext(ctx).Delete(&model.User{}, id).Error
+	if err := r.DB.WithContext(ctx).Delete(&model.User{}, id).Error; err != nil {
+		return err
+	}
+	if r.DB.RowsAffected == 0 {
+		return gorm.ErrRecordNotFound
+	}
+	return nil
 }
 
 func (r *UserRepo) ListAllUsers(ctx context.Context) ([]model.User, error) {
